@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "685239071526",
+    "project_id": "falculator-4bb87",
+    "storage_bucket": "falculator-4bb87.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685239071526:android:067757a304b1a19d0f47e7",
+        "android_client_info": {
+          "package_name": "com.example.music_player"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVgJzrn7-TE9bs_5ZeSjcjrBMPdRlVLkE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
