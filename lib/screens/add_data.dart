@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:music_player/admin_panel/constants.dart';
-import 'package:music_player/admin_panel/database/database.dart';
-import 'package:music_player/admin_panel/models/uploadVideoModel.dart';
+import 'package:music_player/database/database.dart';
+import 'package:music_player/models/uploadVideoModel.dart';
 import 'package:music_player/xutils/xcheckbox.dart';
 import 'package:music_player/xutils/xdialogs.dart';
 import 'package:music_player/xutils/xtext.dart';
 import 'package:music_player/xutils/xtextfield.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+
+import '../constants.dart';
 
 class AdminAddData extends StatefulWidget {
   const AdminAddData({super.key});
@@ -115,7 +116,7 @@ class _AdminAddDataState extends State<AdminAddData> {
 
     XDialogs.showProgressBar(context);
     try{
-      await AdminDatabase().addData(
+      await Database().addData(
           UploadVideoModel(
             videoId: videoId,
             title: title,

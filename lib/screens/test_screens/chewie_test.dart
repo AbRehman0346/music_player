@@ -15,7 +15,8 @@ class _ChewieTestState extends State<ChewieTest> {
   void initState() {
     super.initState();
     final videoPlayerController = VideoPlayerController.networkUrl(Uri.parse(
-        'https://drive.google.com/uc?id=1hxv16B_yK57WbR8gzzRxY6LyCKNpdkDS'));
+        'https://drive.google.com/uc?id=1rIllRxR07Gco6fZCiCiBTk_3JrKVKw6T'));
+
     videoPlayerController.initialize().then((chewieController){
       {
         final chewieController = ChewieController(
@@ -36,6 +37,6 @@ class _ChewieTestState extends State<ChewieTest> {
   
   @override
   Widget build(BuildContext context) {
-    return video ?? Container();
+    return video ?? const CircularProgressIndicator();
   }
 }
